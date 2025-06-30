@@ -1,0 +1,4 @@
+This script connects to a SQLite database, fetches student records, and exports them into three formats:
+CSV: for compatibility
+Parquet: for analytics
+Avro: for schema evolution and serialization

@@ -1,0 +1,2 @@
+This script copies all tables and their data from source.db to destination.db.
+It replicates both schema and content dynamically, ensuring a full backup or migration.

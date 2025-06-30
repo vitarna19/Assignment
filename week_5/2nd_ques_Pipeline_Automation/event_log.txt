@@ -1,0 +1,3 @@
+Triggered pipeline for watched_folder\test_trigger.txt at 2025-06-30 18:19:13.949275
+Triggered pipeline for watched_folder\data.csv at 2025-06-30 18:21:15.477314
+Pipeline triggered for watched_folder\test.csv at 2025-06-30 18:33:50.516991

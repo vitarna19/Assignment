@@ -1,0 +1,2 @@
+This script performs a selective migration by copying only specific tables and columns from source.db to destination.db.
+Useful for compliance or reducing data volume during migration.
