@@ -1,0 +1,25 @@
+Week 6 Assignment – Azure Data Factory Pipeline Simulation
+
+
+Task 1: Configure Self-hosted Integration Runtime to Extract Data from Local Server and Load into Azure SQL Database
+In this task, I simulated the extraction of data from a local environment using a CSV file (`local_data.csv`). A Python script named `extract_from_local.py` reads this file and simulates the data transfer process. Since I did not have access to Azure SQL, the loading step is assumed to be completed after extraction, and data is simply displayed.
+
+
+Task 2: Configure FTP/SFTP Server and Create an ADF Pipeline for Data Extraction
+Here, I created a mock FTP server locally using the `pyftpdlib` library to simulate the presence of an FTP server. A sample file is placed inside the server directory, and a second script (`extract_from_ftp.py`) is used to connect to the server and download that file to simulate FTP data extraction.
+
+
+Task 3: Create Incremental Load Pipeline and Automate This on a Daily Basis
+This task simulates a daily incremental load process. I created a data source file (`data_source.csv`) and a target file (`target_data.csv`). Each time the `incremental_loader.py` script runs, it checks the watermark stored in `last_run.txt` and only processes new records with an `id` greater than the last processed one. A `data_generator.py` script is also provided to simulate new incoming records each day.
+
+
+Task 4: Automate a Pipeline to Trigger Every Last Saturday of the Month
+This task simulates a time-based trigger. The script `monthly_trigger.py` checks whether the current day is the last Saturday of the month. If it is, the script runs `incremental_loader.py` using `subprocess` to simulate a triggered pipeline. The logic uses Python’s `calendar` and `datetime` modules to calculate the last Saturday.
+
+
+Task 5: Retry Logic for Failures
+To handle failures, I created a retry mechanism in `retry_logic.py`. It simulates a flaky task that may fail randomly and attempts to run it again up to 3 times with increasing delay intervals (exponential backoff). All retry attempts are logged to a file (`retry_log.txt`). The logic is general and can be applied to any fragile task like downloading files, copying data, or querying APIs.
+
+Conclusion:
+Due to lack of access to Azure credentials, all tasks were simulated using Python to replicate expected ADF functionality locally. The goal was to replicate the logic and behavior of ADF pipelines as closely as possible using local tools and libraries. All code is modular, testable, and organized by task.
+

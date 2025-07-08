@@ -1,0 +1,9 @@
+[2025-07-07 20:54:00] Attempt 1 started
+[2025-07-07 20:54:00] Attempt 1 failed: Simulated failure in task 'Mock FTP File Download'
+[2025-07-07 20:54:05] Attempt 2 started
+[2025-07-07 20:54:05] Attempt 2 failed: Simulated failure in task 'Mock FTP File Download'
+[2025-07-07 20:54:15] Attempt 3 started
+[2025-07-07 20:54:15] Attempt 3 failed: Simulated failure in task 'Mock FTP File Download'
+[2025-07-07 20:54:15] All retry attempts failed.
+[2025-07-07 20:54:19] Attempt 1 started
+[2025-07-07 20:54:19] Attempt 1 succeeded
