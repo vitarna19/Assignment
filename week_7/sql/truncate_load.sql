@@ -1,0 +1,3 @@
+TRUNCATE TABLE dbo.CUST_MSTR;
+TRUNCATE TABLE dbo.master_child;
+TRUNCATE TABLE dbo.H_ECOM_Orders;
